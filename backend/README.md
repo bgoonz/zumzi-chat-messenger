@@ -6,7 +6,7 @@ The demo app uses  Private Backend APIs . Your app uses these private APIs for l
 
 You can host mesibo's backend API or use the existing backend hosted at `https://app.mesibo.com/conf/api.php` . You can also customize mesibo backend APIs as per your requirements. 
 
-If you are hosting mesibo backend APIs modify [config.js](https://github.com/mesibo/conferencing/blob/master/live-demo/web/mesibo/config.js) to point to your own URL and you are good to go. 
+If you are hosting mesibo backend APIs modify [config.js](https://github.com/mesibo/conferencing/blob/master/live-demo/web/zumzi/config.js) to point to your own URL and you are good to go. 
 
 ### Hosting Backend APIs
 
@@ -80,10 +80,10 @@ Above output indicates that the backend appears to be set up correctly.
 
 ### Configure the conferencing demo app to use your backend API
 
-Once you are done with the backend setup, Edit the [config.js](https://github.com/mesibo/conferencing/blob/master/live-demo/web/mesibo/config.js) of the app to use your own private API URL (replacing https://app.mesibo.com/api.php with the new one).
+Once you are done with the backend setup, Edit the [config.js](https://github.com/mesibo/conferencing/blob/master/live-demo/web/zumzi/config.js) of the app to use your own private API URL (replacing https://app.mesibo.com/api.php with the new one).
 
-* Edit `conferencing/live-demo/web/mesibo/config.js` and enter the private API url in `MESIBO_API_BACKEND` field
-* Edit `conferencing/live-demo/web/mesibo/config.js` and enter the grecaptcha public key in `MESIBO_CAPTCHA_TOKEN` field
+* Edit `conferencing/live-demo/web/zumzi/config.js` and enter the private API url in `MESIBO_API_BACKEND` field
+* Edit `conferencing/live-demo/web/zumzi/config.js` and enter the grecaptcha public key in `MESIBO_CAPTCHA_TOKEN` field
 
 For example, 
 
@@ -110,7 +110,7 @@ Anyone who wants to join the group, also need to be a mesibo user with a token. 
 
 So, for the first step, we authenticate a user and generate a token for them.
 
-1. We will ask for the name and email of the user and send an OTP to their email. To do this send a request with the following parameters to send an OTP to the email of the user. `MESIBO_API_BACKEND` is the API url configured in [config.js](https://github.com/mesibo/conferencing/blob/master/live-demo/web/mesibo/config.js)
+1. We will ask for the name and email of the user and send an OTP to their email. To do this send a request with the following parameters to send an OTP to the email of the user. `MESIBO_API_BACKEND` is the API url configured in [config.js](https://github.com/mesibo/conferencing/blob/master/live-demo/web/zumzi/config.js)
 
 ``` 
 MESIBO_API_BACKEND?op=login&appid=APP_ID&name=NAME&email=USER_EMAIL

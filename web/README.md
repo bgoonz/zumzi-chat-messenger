@@ -21,9 +21,9 @@ We have also hosted the same code at [https://mesibo.com/livedemo](https://mesib
 
 ### Configuring the backend
 
-If you want to setup your backend for the conferencing app, refer to the [backend](https://github.com/mesibo/conferencing/tree/master/live-demo/backend) and modify [config.js](https://github.com/mesibo/conferencing/blob/master/live-demo/web/mesibo/config.js) accordingly.
+If you want to setup your backend for the conferencing app, refer to the [backend](https://github.com/mesibo/conferencing/tree/master/live-demo/backend) and modify [config.js](https://github.com/mesibo/conferencing/blob/master/live-demo/web/zumzi/config.js) accordingly.
 
-If you choose not to setup the backend, you can use the Mesibo API backend at `https://app.mesibo.com/conf/api.php` and use the default configuration in [config.js](https://github.com/mesibo/conferencing/blob/master/live-demo/web/mesibo/config.js)
+If you choose not to setup the backend, you can use the Mesibo API backend at `https://app.mesibo.com/conf/api.php` and use the default configuration in [config.js](https://github.com/mesibo/conferencing/blob/master/live-demo/web/zumzi/config.js)
 
 # Building a Zoom Like Conferencing app 
 
