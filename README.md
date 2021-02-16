@@ -1,8 +1,5 @@
-## mesibo Live Demo 
+## Zumzi Live Demo 
 
-This folder contains the source code for [mesibo sample conferencing app](https://mesibo.com/livedemo). This is a fully functional, Zoom Like Video Conferencing app which you can directly integrate into your website. 
-
-We have also hosted the same code at [https://mesibo.com/livedemo](https://mesibo.com/livedemo) so that you can quickly try it out. 
 
 ## Features:
 - Group Voice and Video Call with unlimited members
