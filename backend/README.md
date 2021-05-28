@@ -1,8 +1,8 @@
 ## Backend for Sample Conferencing App
 
-This repository contains the backend source code for the mesibo Sample Conferencing App which you can readily host and use it or modify it as per your needs.
+This repository contains the backend source code for the Zumzi Chat App 
 
-The demo app uses Private Backend APIs . Your app uses these private APIs for login and other administrative tasks such as creating users, groups,etc. In turn, the private API connects to the mesibo backend API to perform the necessary operations your database. Private APIs internally call the [User and Group Management APIs](https://mesibo.com/documentation/api/backend-api).
+The  app uses Private Backend APIs . In turn, the private API connects to the mesibo backend API to perform the necessary operations your database. Private APIs internally call the [User and Group Management APIs](https://mesibo.com/documentation/api/backend-api).
 
 You can host mesibo's backend API or use the existing backend hosted at `https://app.mesibo.com/conf/api.php`. You can also customize mesibo backend APIs as per your requirements.
 

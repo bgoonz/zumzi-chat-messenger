@@ -17,17 +17,57 @@ It is recommended that you first look at [basic demo](https://github.com/mesibo/
 - One-to-One chat
 - Invite Participants
 
-We have also hosted the same code at [https://mesibo.com/livedemo](https://mesibo.com/livedemo) so that you can quickly try it out.
 
-### Configuring the backend
+- [].//assets](.//assets)
+- [.//index.html](.//index.html)
+- [.//listing.md](.//listing.md)
+- [.//login.html](.//login.html)
+- [.//mesibo](.//mesibo)
+- [.//README.md](.//README.md)
+- [.//scripts](.//scripts)
+- [.//styles](.//styles)
+- [.//vendor](.//vendor)
+- [./assets/audio](./assets/audio)
+- [./assets/fonts](./assets/fonts)
+- [./assets/images](./assets/images)
+- [./assets/scripts](./assets/scripts)
+- [./assets/audio/join.mp3](./assets/audio/join.mp3)
+- [./assets/audio/join.ogg](./assets/audio/join.ogg)
+- [./assets/fonts/font-awesome](./assets/fonts/font-awesome)
+- [./assets/fonts/font-awesome/css](./assets/fonts/font-awesome/css)
+- [./assets/fonts/font-awesome/css/font-awesome.css](./assets/fonts/font-awesome/css/font-awesome.css)
+- [./assets/images/blank-white.jpg](./assets/images/blank-white.jpg)
+- [./assets/images/file](./assets/images/file)
+- [./assets/images/mesibo-logo-m.png](./assets/images/mesibo-logo-m.png)
+- [./assets/images/mesibo-logo.png](./assets/images/mesibo-logo.png)
+- [./assets/images/profile](./assets/images/profile)
+- [./assets/images/file/default_file_icon.jpg](./assets/images/file/default_file_icon.jpg)
+- [./assets/images/profile/default-group-icon.jpg](./assets/images/profile/default-group-icon.jpg)
+- [./assets/images/profile/default-profile-icon.jpg](./assets/images/profile/default-profile-icon.jpg)
+- [./assets/scripts/platform.js](./assets/scripts/platform.js)
+- [./mesibo/app.js](./mesibo/app.js)
+- [./mesibo/calls.js](./mesibo/calls.js)
+- [./mesibo/config.js](./mesibo/config.js)
+- [./mesibo/files.js](./mesibo/files.js)
+- [./mesibo/notify.js](./mesibo/notify.js)
+- [./mesibo/utils.js](./mesibo/utils.js)
+- [./scripts/app-utils.js](./scripts/app-utils.js)
+- [./scripts/controller.js](./scripts/controller.js)
+- [./scripts/login.js](./scripts/login.js)
+- [./styles/live.css](./styles/live.css)
+- [./styles/mesibolive.css](./styles/mesibolive.css)
+- [./styles/popup.css](./styles/popup.css)
+- [./styles/popupdesign.css](./styles/popupdesign.css)
+- [./vendor/bootstrap.min.css](./vendor/bootstrap.min.css)
+- [./vendor/bootstrap.min.js](./vendor/bootstrap.min.js)
 
-If you want to setup your backend for the conferencing app, refer to the [backend](https://github.com/mesibo/conferencing/tree/master/live-demo/backend) and modify [config.js](https://github.com/mesibo/conferencing/blob/master/live-demo/web/mesibo/config.js) accordingly.
 
-If you choose not to setup the backend, you can use the Mesibo API backend at `https://app.mesibo.com/conf/api.php` and use the default configuration in [config.js](https://github.com/mesibo/conferencing/blob/master/live-demo/web/mesibo/config.js)
+
+
 
 # Building a Zoom Like Conferencing app
 
-![Mesibo Room](mesibo-room.png)
+![Zumi Room](mesibo-room.png)
 
 ### Prerequisites
 
@@ -37,7 +77,7 @@ If you choose not to setup the backend, you can use the Mesibo API backend at `h
 - A web server with HTTPS and PHP support. We assume that your hostname is example.com and the backend is accessible via URL https://example.com/api.php over a **secure connection**
 - Camera and Microphone access. Please ensure you have set up camera and microphone devices and granted the required permissions in the browser
 
-You can try the [Mesibo Live Demo(Beta)](https://mesibo.com/livedemo) which is a fully functional, Zoom Like Video Conferencing app and also download the entire source code from [Github](https://github.com/mesibo/conferencing).
+
 
 ## Terminology
 
