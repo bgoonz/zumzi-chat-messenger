@@ -1,14 +1,15 @@
 <?php
 
-require_once('config.php');
+require_once "config.php";
 
 $err = false;
-if(!isset($apikey))
-	$err = true;
+if (!isset($apikey)) {
+    $err = true;
+}
 
 if ($err) {
-	echo "ERROR: Please define your api key. If you don't have one then signup at https://mesibo.com to get one";
-	exit();	
+    echo "ERROR: Please define your api key. If you don't have one then signup at https://mesibo.com to get one";
+    exit();
 }
 
 /********************************************************************************
@@ -18,8 +19,8 @@ if ($err) {
  IMPORTANT: All functions are dependent on the a base API URL 
             http://api.tringme.com/api.php?  which is invoked to perform the operation.
 *********************************************************************************/
-$host = $_SERVER['HTTP_HOST'];
-$mesibobaseurl  = "https://api.mesibo.com/api.php?";
+$host = $_SERVER["HTTP_HOST"];
+$mesibobaseurl = "https://api.mesibo.com/api.php?";
 
 /********************************************************************************
 Descripton: Performs the requested API operation 
@@ -30,13 +31,14 @@ Parameters: $parameters - Parameters specific to the operation
 Return Values: True- If operation is successful.        
                False- If operation failed.                                                             
 *********************************************************************************/
-function MesiboAPI($parameters) {
-	global $apikey, $apilog, $file, $apptoken;
-	//$parameters['key']=$apikey;
-	$parameters['token']=$apptoken;
-	$apiuri=CreateAPIURL($parameters);
-	$response = GetAPIResponse($apiuri);
-	return MesiboParseResponse($response);
+function MesiboAPI($parameters)
+{
+    global $apikey, $apilog, $file, $apptoken;
+    //$parameters['key']=$apikey;
+    $parameters["token"] = $apptoken;
+    $apiuri = CreateAPIURL($parameters);
+    $response = GetAPIResponse($apiuri);
+    return MesiboParseResponse($response);
 }
 
 /********************************************************************************
@@ -48,11 +50,13 @@ Parameters: $response - The response to be parsed.
 Return Values: True- If the response was a success.    
                False- If the response was a failure.   
 *********************************************************************************/
-function MesiboParseResponse($response) {
-	$result = json_decode($response, true);
-	if(is_null($result)) 
-		return false;
-	return $result;
+function MesiboParseResponse($response)
+{
+    $result = json_decode($response, true);
+    if (is_null($result)) {
+        return false;
+    }
+    return $result;
 }
 
 /********************************************************************************
@@ -62,27 +66,27 @@ Parameters: $url - URL of the API being invoked.
 
 Return Values: Returns the response
 *********************************************************************************/
-function GetAPIResponse($url) {
-    
-	$opts = array(
-		'http'=>array(
-		'method'=>"GET",
-		'header'=>"Accept-language: en\r\n" .
-				"Cookie: foo=bar\r\n"
-					)
-		);
+function GetAPIResponse($url)
+{
+    $opts = [
+        "http" => [
+            "method" => "GET",
+            "header" => "Accept-language: en\r\n" . "Cookie: foo=bar\r\n",
+        ],
+    ];
 
-	$context = stream_context_create($opts);
-	$response = 'FAILED';
-	$sock=fopen($url, 'r', false, $context);
-	if ($sock) {
-		$response='';
-		while (!feof($sock))
-			$response.=fgets($sock, 4096);
+    $context = stream_context_create($opts);
+    $response = "FAILED";
+    $sock = fopen($url, "r", false, $context);
+    if ($sock) {
+        $response = "";
+        while (!feof($sock)) {
+            $response .= fgets($sock, 4096);
+        }
 
-		fclose($sock);
-	}
-	return $response;
+        fclose($sock);
+    }
+    return $response;
 }
 
 /********************************************************************************
@@ -94,18 +98,19 @@ Parameters: $params_array - Parameters
                                                                                          
 Return Values: The URL that is constructed.    
 *********************************************************************************/
-function CreateAPIURL($params_array) {
-	global $mesibobaseurl;
-	
-	$uri = $mesibobaseurl;
-	if (isset($params_array['apiurl']))
-		$uri = $params_array['apiurl'];
-		
-	foreach($params_array as $key=>$val) {   
-		$uri .= "$key=" . urlencode($val) . '&';    
-	}
+function CreateAPIURL($params_array)
+{
+    global $mesibobaseurl;
 
-	$uri .= "sig=none";        
-	return $uri;
+    $uri = $mesibobaseurl;
+    if (isset($params_array["apiurl"])) {
+        $uri = $params_array["apiurl"];
+    }
+
+    foreach ($params_array as $key => $val) {
+        $uri .= "$key=" . urlencode($val) . "&";
+    }
+
+    $uri .= "sig=none";
+    return $uri;
 }
-
