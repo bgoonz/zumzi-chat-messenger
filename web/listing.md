@@ -19,7 +19,7 @@
 - [./assets/images/blank-white.jpg](./assets/images/blank-white.jpg)
 - [./assets/images/file](./assets/images/file)
 - [./assets/images/mesibo-logo-m.png](./assets/images/mesibo-logo-m.png)
-- [./assets/images/mesibo-logo.png](./assets/images/mesibo-logo.png)
+- [./assets/images/social.png](./assets/images/social.png)
 - [./assets/images/profile](./assets/images/profile)
 - [./assets/images/file/default_file_icon.jpg](./assets/images/file/default_file_icon.jpg)
 - [./assets/images/profile/default-group-icon.jpg](./assets/images/profile/default-group-icon.jpg)

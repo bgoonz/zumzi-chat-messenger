@@ -1,8 +1,8 @@
-## Backend for Sample Conferencing App
+## Backend Conferencing App
 
-This repository contains the backend source code for the Zumzi Chat App 
+This repository contains the backend source code for the Zumzi Chat App
 
-The  app uses Private Backend APIs . In turn, the private API connects to the mesibo backend API to perform the necessary operations your database. Private APIs internally call the [User and Group Management APIs](https://mesibo.com/documentation/api/backend-api).
+The app uses Private Backend APIs . In turn, the private API connects to the mesibo backend API to perform the necessary operations your database. Private APIs internally call the [User and Group Management APIs](https://mesibo.com/documentation/api/backend-api).
 
 You can host mesibo's backend API or use the existing backend hosted at `https://app.mesibo.com/conf/api.php`. You can also customize mesibo backend APIs as per your requirements.
 
@@ -98,7 +98,7 @@ That's it! You are now good to go about running the conferecing demo app connect
 
 Before you continue, Remember that, private APIs are not the replacement for mesibo backend APIs. Private APIs invoke mesibo backend APIs. You will still need to invoke mesibo API at https://api.mesibo.com/api.php for adding users, groups, members, etc.
 
-These are private backend APIs that are only meant for use in the sample conferencing app. The private APIs used in the conferencing app are :
+These are private backend APIs that are only meant for use in this conferencing app. The private APIs used in the conferencing app are :
 
 - `login` - For generating a token for a user
 - `setgroup` - For letting a user create a room

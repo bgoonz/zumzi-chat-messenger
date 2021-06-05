@@ -1,4 +1,2 @@
-var collectionsTOC = new Array()
-collectionsTOC["library"] = [
-  
-]
+var collectionsTOC = new Array();
+collectionsTOC["library"] = [];

@@ -2,7 +2,6 @@
 
 const MESIBO_APP_ID = "live";
 
-
 const MESIBO_API_BACKEND = "https://app.mesibo.com/conf/api.php";
 
 /* If you are hostingZumzibackend on your own server,
@@ -17,7 +16,7 @@ var MESIBO_UPLOAD_URL = "https://s3.mesibo.com/api.php";
 /* Debug Mode Configuration */
 isDebug = true; // toggle this to turn on / off for global control
 if (isDebug) var MesiboLog = console.log.bind(window.console);
-else var MesiboLog = function() {};
+else var MesiboLog = function () {};
 
 var ErrorLog = console.log.bind(window.console);
 /*ErrorLog(function_name, error_msg)*/
